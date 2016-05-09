@@ -1,0 +1,19 @@
+lisp_parser
+- a lisp parser implementation which generates AST
+- modular and incremental parser design from char_stream/token_stream/lexer_stream to reducer/shifter/parser
+
+
+dependence
+- lisp-uint2
+- log4cl
+- https://github.com/scopeview/lisp_utils
+
+
+run parser demo
+- check lisp_utils/test/run.lisp and lisp_parser/test/run.lisp to find out how to load depended packages
+  and change the load path to yours
+- run test case in lisp_parser/parser/demo-parser.lisp
+
+
+TODO
+- BNF/EBNF -> production tranlation (currently, reducer rules in demo are created manually)
